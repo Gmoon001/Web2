@@ -1,0 +1,332 @@
+
+
+.activeMenuItems {
+  box-shadow:0 0 10px 5px rgb(171, 170, 170);
+  background: linear-gradient(45deg,rgba(255, 0, .7),rgba(255, 165, .7));
+}
+.activeMenuItemImg {
+  width: 20%;
+  height: 50px;
+  transition: all 0.5s ease;
+}
+.activeMenuItemOverlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+  font-family: "Roboto";
+  z-index: 69;
+}
+
+.menu
+{
+  position: sticky;
+  left: 0;
+  box-sizing: content-box;
+
+  height:450px;
+  width: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+  background: #f1f1f1;
+  
+  
+  top: 100px;
+  z-index: 1;
+  margin-bottom: 115px;
+}
+.close-menu-products-icon {
+  display: none;
+}
+.showMenu {
+  left: 0!important;
+  opacity: 1!important;
+  z-index: 10001;
+  pointer-events: visible!important;
+}
+
+.menu .menu-title
+{
+  font-weight: bolder;
+  text-align: center;
+  font-size: 20px;
+}
+
+.menu .menu-items
+{
+  height: 100px;
+  margin: 20px ;
+
+  position: relative;
+  text-align: center;
+
+  border-bottom: 1px solid rgb(187, 187, 187);
+  border-radius: 10px;
+  transition: all 0.5s ease ;
+}
+
+.menu .menu-items:hover
+{
+  box-shadow:0 0 10px 5px rgb(171, 170, 170);
+  background: linear-gradient(45deg,red,orange);
+}
+
+.menu .menu-items img
+{
+  width: 20%;
+  height: 50px;
+  transition: all 0.5s ease;
+}
+
+.menu .menu-items:hover img
+{
+  width: 40%;
+  height: 80px;
+  filter: blur(2px);
+}
+
+
+
+.menu .menu-items:hover > .overlay
+{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+  font-family: "Roboto";
+  z-index: 69;
+  
+}
+.menu #item-1:hover > .overlay::after
+{
+  content:"KEYBOARDS";
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  font-weight: bolder;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.menu #item-2:hover > .overlay::after
+{
+  content:"HEADPHONES";
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  font-weight: bolder;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu #item-3:hover > .overlay::after
+{
+  content:"MOUSES";
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  font-weight: bolder;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu #item-4:hover > .overlay::after
+{
+  content:"SPEAKERS";
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  font-weight: bolder;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu #item-5:hover > .overlay::after
+{
+  content:"LAPTOP";
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  font-weight: bolder;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.menu #item-1 img
+{
+  width: 30%;
+  height: 60px;
+}
+
+.menu #item-1:hover img
+{
+  width: 50%;
+  height: 100px;
+  filter: blur(2px);
+}
+
+.menu #item-2
+{
+
+}
+.menu #item-3
+{
+
+}
+.menu #item-4
+{
+  
+}
+
+.menu #item-4 img
+{
+  width: 25%;
+  height: 50px;
+}
+
+.menu #item-4:hover img
+{
+  width: 40%;
+  height: 80px;
+  filter: blur(2px);
+}
+
+.menu #item-5
+{
+}
+
+
+.back-to-top
+{
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(45deg, rgba(255, 0, 0,.8), rgba(255, 165, 0,.8));
+  border-radius: 20px;
+  position: fixed;
+  opacity: 0;
+  transform: translateY(15px);
+  right:50px;
+  bottom: 50px;
+  font-size: 20px;
+  z-index: 2;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, .6) ;
+  transition: ease .3s;
+  pointer-events: none;
+}
+
+.back-top-top-icon {
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.back-to-top:hover .back-top-top-icon {
+  width: 55px;
+  line-height: 55px;
+}
+
+.back-to-top:hover {
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, .8) ;
+
+}
+
+.open {
+  pointer-events: visible;
+  opacity: 1;
+  transform: translateY(0);
+
+}
+
+.menu .menu
+{
+  height: 100px;
+  margin: 20px ;
+
+  position: relative;
+  text-align: center;
+
+  border-bottom: 1px solid rgb(187, 187, 187);
+  border-radius: 10px;
+  transition: all 0.5s ease ;
+
+  box-shadow:0 0 10px 5px rgb(171, 170, 170);
+  background: linear-gradient(to bottom,rgb(131, 131, 250),rgb(131, 249, 131));
+}
+
+.menu .active img{
+  width: 40%;
+  height: 80px;
+  filter: blur(2px);
+}
+
+.menu .active > .overlay
+{
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+  font-family: "Roboto";
+  z-index: 69;
+  
+}
+
+.menu .active> .overlay::after
+{
+  content:"KEYBOARDS";
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  font-weight: bolder;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* @keyframes color-changing {
+  1%{
+    background: linear-gradient(to bottom,rgb(251, 131, 131),rgb(131, 131, 250));
+    
+  }
+  50%{
+    
+
+  }
+  100%
+  {
+    
+    background: linear-gradient(to bottom,rgb(131, 249, 131)),rgb(251, 131, 131);
+
+  }
+} */
+

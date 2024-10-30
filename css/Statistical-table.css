@@ -1,0 +1,129 @@
+
+.container-content .title
+{
+   padding-bottom:20px ;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.container-content .Statistical .header
+{
+  width:100%;
+  height: 80px;
+  display: grid;
+  grid-template-columns: 5% 10% 40% 15% 14% 16% ;
+  font-weight: bolder;
+  border: 2px solid ;
+  background: rgb(255,144,39);
+}
+
+.container-content .Statistical .footer
+{
+  width:100%;
+  height: 80px;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  font-weight: bolder;
+  border-left: 2px solid;
+  border-bottom: 2px solid ;
+  background: rgb(58, 199, 82);
+  font-size: 20px;
+}
+
+.container-content .Statistical 
+{
+  width: 100%;
+  padding: 0 40px 40px;
+}
+
+.container-content .Statistical .Statistical-item
+{
+  width:100%;
+  height: 80px;
+  display: grid;
+  grid-template-columns: 5% 10% 40% 15% 14% 16%;
+  border-bottom: 2px solid grey;
+  border-left: 2px solid;
+  border-right: 2px solid;
+}
+
+.Statistical-PRODUCT-TYPE,.Statistical-PRODUCT-NAME,.STT,.QUALITY,.Statistical-PRICE,.TOTAL,.line,.Total-revenue
+{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid;
+}
+
+.Statistical .header .TOTAL {
+  border-right: 0;
+}
+
+.Statistical .Statistical-item .TOTAL {
+  border-right: 0;
+}
+
+input[type="checkbox"] {
+  appearance: checkbox !important;
+  transform: scale(2);
+
+}
+
+.container-content .date-filter {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px 40px;
+}
+
+.container-content .date-filter .date-start
+{
+  grid-column: 1/2;
+}
+
+.container-content .date-filter .date-start-input
+{
+  grid-column:2/3;
+
+}
+
+.container-content .date-filter .date-end
+{
+  grid-column: 3/4;
+}
+
+.container-content .date-filter .date-end-input
+{
+  grid-column:4/5;
+
+}
+
+.container-content .date-filter input
+{
+  height: 30px;
+  justify-self: center;
+  font-size: 20px;
+  background: white;
+  border-radius: 5px;
+}
+
+.container-content .date-filter label
+{
+  justify-self: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.container-content .date-filter  button
+{
+  width: 100px;
+  height: 30px;
+  background: orange;
+  border: 2px solid black;
+  text-align: center;
+  font-weight: bolder;
+}

@@ -1,0 +1,167 @@
+
+.container-content .title
+{
+   padding-bottom:20px ;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.container-content .exit-order-manage-table
+{
+  position: absolute;
+  top:10px;
+  right: 10px;
+  color: black;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-content .order .header
+{
+  width:100%;
+  height: 80px;
+  display: grid;
+  grid-template-columns: 10% 15% 20% 20% 20% 15%;
+  font-weight: bolder;
+  border: 2px solid ;
+  background: rgb(255,144,39);
+}
+
+.container-content .order 
+{
+  width: 100%;
+  padding: 0 40px 40px;
+}
+
+.container-content .order .order-item
+{
+  width:100%;
+  height: 80px;
+  display: grid;
+  grid-template-columns: 10% 15% 20% 20% 20% 15%;
+  border-bottom: 2px solid grey;
+  border-left: 2px solid;
+  border-right: 2px solid;
+}
+.container-content .order .order-item .order-product
+{
+  overflow: auto;
+  height: 80px;
+}
+
+.order-id,.order-userid,.order-date,.total-price,.header .status
+{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid;
+}
+
+.order-item .order-product{
+  font-size: 18px;
+  transition: all .2s;
+}
+
+.order-item .order-product:hover {
+  cursor: pointer;
+  background: rgba(208, 201, 201, 0.5);
+  color: rgb(255, 165, 0);
+  border-right-color: black;
+}
+
+.order-item .order-product:active{
+  background: rgba(208, 201, 201, 0);
+
+}
+
+.order .header .order-product {
+  border-right: 0;
+}
+
+.order-item .order-product,
+.order-product
+{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  
+}
+.order-status
+{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;  
+  align-items:center;
+  border-right: 2px solid black;
+
+}
+
+input[type="checkbox"] {
+  appearance: checkbox !important;
+  transform: scale(2);
+
+}
+
+.container-content .date-filter {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px 40px;
+}
+
+.container-content .date-filter .date-start
+{
+  grid-column: 1/2;
+}
+
+.container-content .date-filter .date-start-input
+{
+  grid-column:2/3;
+
+}
+
+.container-content .date-filter .date-end
+{
+  grid-column: 3/4;
+}
+
+.container-content .date-filter .date-end-input
+{
+  grid-column:4/5;
+
+}
+
+.container-content .date-filter input
+{
+  height: 30px;
+  justify-self: center;
+  font-size: 20px;
+  background: white;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.container-content .date-filter label
+{
+  justify-self: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.container-content .date-filter  button
+{
+  width: 100px;
+  height: 30px;
+  background: orange;
+  border: 2px solid black;
+  text-align: center;
+  font-weight: bolder;
+}

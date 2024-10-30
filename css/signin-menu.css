@@ -1,0 +1,120 @@
+#create {
+    top: -4.865%;
+}
+
+#sigin-background {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(87, 84, 84, .4);
+    z-index: 10005;
+    align-items: center;
+    justify-content: center;
+}
+
+.signin {
+    width: 100%;
+    max-width: 50rem;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 5.5rem 3.5rem;
+    z-index: 10005;
+    transform: scale(65%);
+}
+
+.signin-icon {
+    cursor: pointer;
+    position: absolute;
+    right: 6%;
+    top: 8%;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.signin-icon:active {
+    background: rgba(138, 135, 135, .3);
+    border-radius: 50%;
+}
+
+.signin-heading {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.signin-already {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 3.5rem;
+}
+
+.signin-link-underline {
+    color: #00aefd;
+    font-size: inherit;
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+.form-input {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    padding: 1.5rem;
+    margin-bottom: 1.8rem;
+    border-radius: 1rem;
+    outline: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border: 1px soild #eee;
+    background-color: #eee;
+    transition: .25s linear;
+    width: 100%;
+}
+
+.form-input:focus {
+    border-color: #eee;
+    background-color: #eee;
+}
+
+.form-input::-webkit-input-placeholder {
+    color: #c3beb3;
+    font-style: italic;
+}
+
+.form-submit {
+    border-radius: 10px;
+    color: white;
+    outline: none;
+    padding: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border: 0;
+    width: 100%;
+    background-color: rgba(0, 174, 253, .7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-submit:hover {
+    background-color: rgba(0, 174, 253);
+}
+
+.form-submit:active {
+    background-color: rgba(0, 174, 253, .7);
+}
+
+.form-submit-text {
+    margin: 0 auto;
+}

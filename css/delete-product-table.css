@@ -1,0 +1,109 @@
+.delete-product-container
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.231);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10001;
+}
+
+.delete-product-container .delete-product-table
+{
+  position: absolute;
+  height: 500px;
+  width: 900px;
+  padding: 20px;
+  background: whitesmoke;
+  z-index: 10002;
+}
+
+.delete-product-container .delete-product-table .exit-delete-product-table
+{
+  position: absolute;
+  top:10px;
+  right: 10px;
+  color: black;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete-product-container .delete-product-table .title
+{
+  grid-column: 1/3;
+  grid-row: 1/2;
+  height: 50px;
+
+  text-align: center;
+  font-weight: bolder;
+  font-size: 24px;
+}
+.delete-product-container .delete-product-table .delete-item-container
+{
+  width: 100%;
+  height: 80%;
+  overflow: scroll;
+}
+
+.delete-product-container .delete-product-table .delete-item-container .input-label
+{
+  padding-bottom: 20px;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 10% 90%;
+}
+
+.delete-product-container .delete-product-table .delete-item-container .input-label:not(.input-label:last-child)
+{
+  border-bottom: 1px solid black;
+}
+
+.delete-product-container .delete-product-table .delete-item-container .input-label .delete-item
+{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+
+}
+
+
+.delete-product-container .delete-product-table .delete-item-container .input-label .delete-item .delete-item-img
+{
+  width: 150px;
+  height: 100px;
+  justify-self: center;
+}
+
+.delete-product-container .delete-product-table .save-product-btn
+{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  
+}
+
+.delete-product-container .delete-product-table .save-product-btn button
+{
+  width: 100px;
+  height: 30px;
+
+  background: orange;
+  border-radius: 5px;
+
+  text-align: center;
+}
+
+.delete-product-container .delete-product-table .delete-item-container .input-label input[type="checkbox"] {
+  appearance: checkbox !important;
+  transform: scale(0.3);
+}

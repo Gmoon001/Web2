@@ -1,0 +1,64 @@
+.banner{
+	height: 100vh;
+	width: 100%;	
+	box-shadow: 0px 0px 25px 8px #888888;
+}
+/*CONTENT*/
+.banner-content{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	transition: all 0.4s ease;
+}
+.banner-btn{
+	position:absolute;
+	width: 100%;
+	top: 50%;
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer;
+}
+.banner-btn i {
+	color: #333;
+	font-size: 25px;
+	height: 40px;
+	width: 30px;
+	background-color: #FFFFFF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: translateY(-50%);
+	border-radius: 30%;
+	padding: 5px;
+	margin: 10px;
+	opacity: 0;
+	transition: all 0.5s ease;
+	cursor: pointer;
+}
+.banner-content img{
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	display: flex;
+}
+/*Banner js*/
+
+.banner-content a:nth-child(2) img{
+	transform: translateX(100%);
+}
+.banner-content a:nth-child(3) img{
+	transform: translateX(200%);
+}
+.banner-content a:nth-child(4) img{
+	transform: translateX(300%);
+}
+.banner-content a:nth-child(5) img{
+	transform: translateX(400%);
+}
+.banner-container{
+	position: relative;
+	overflow: hidden;
+}
+.banner-container :hover i{
+	opacity: 1;
+}
